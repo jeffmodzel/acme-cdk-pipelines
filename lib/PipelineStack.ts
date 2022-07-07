@@ -43,7 +43,7 @@ export class PipelineStack extends cdk.Stack {
         }
       }),{
         post:[ new ShellStep('do something', {
-            commands: ['ls -la']
+            commands: ['ls -la','chmod +x do_stuff.sh','./do_stuff.sh']
         })]
       }
     );
