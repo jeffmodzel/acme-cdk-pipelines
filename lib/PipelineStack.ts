@@ -6,7 +6,7 @@ import {
   ShellStep,
 } from "aws-cdk-lib/pipelines";
 import { PipelineAppStage } from "./PipelineAppStage";
-import { ShellAppStage } from "./PipelineAppStage";
+import { ShellAppStage } from "./ShellAppStage";
 
 export class PipelineStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
