@@ -5,6 +5,6 @@ export class ShellAppStage extends cdk.Stage {
     
     constructor(scope: Construct, id: string, props?: cdk.StageProps) {
       super(scope, id, props);
-  
+      new cdk.CfnOutput(this, 'Output', {value: 'value'});
     }
 }
